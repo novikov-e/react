@@ -1,0 +1,19 @@
+%input {
+  background-color: transparent;
+  color: var(--tab-text-color);
+  font-size: 15px;
+  font-weight: 500;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+%input-bordered {
+  border: var(--button-border);
+  border-radius: 4px;
+}
+
+.input {
+  @extend %input;
+  @extend %input-bordered;
+}

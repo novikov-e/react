@@ -1,0 +1,31 @@
+@use 'colors';
+@use 'buttons';
+@use 'input';
+@use 'table';
+@use 'modal';
+@use 'atom_animation';
+@use 'logos';
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Open Sans Regular', serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --header-height: 50px;
+  --custom-menu-width: 256px;
+}

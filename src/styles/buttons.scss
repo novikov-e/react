@@ -1,0 +1,134 @@
+%button {
+  background-color: transparent;
+  color: var(--tab-text-color);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+%button-bordered {
+  border: var(--button-border);
+  border-radius: 4px;
+}
+
+.button {
+  @extend %button;
+  @extend %button-bordered;
+  padding: 0 10px;
+}
+
+.button-with-text-and-icon {
+  @extend %button;
+  @extend %button-bordered;
+  display: flex;
+  gap: 5px;
+  padding: 0 8px 0 5px;
+  align-items: center;
+}
+
+.button-icon {
+  @extend %button;
+  @extend %button-bordered;
+  padding: 1px;
+}
+
+.button-icon-without-border {
+  @extend %button;
+  border: none;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.button-with-text-icon-without-border {
+  @extend %button;
+  display: flex;
+  gap: 5px;
+  padding: 0 8px 0 5px;
+  align-items: center;
+}
+
+.button-with-text-icon-without-border:hover {
+  opacity: 0.7;
+}
+
+.button:disabled,
+.button-with-text-and-icon:disabled,
+.button-icon:disabled,
+.button-icon-without-border:disabled,
+.button-with-text-icon-without-border:disabled {
+  opacity: 0.7;
+  background-color: transparent;
+}
+
+.button:active,
+.button-with-text-and-icon:active,
+.button-icon:active,
+.button-icon-without-border:active,
+.button-with-text-icon-without-border:active {
+  opacity: 0.7;
+}
+
+@mixin button-hover-color($hover-color: var(--blue)) {
+  border: 2px solid $hover-color;
+  color: $hover-color;
+  .svg-icon {
+    fill: $hover-color;
+  }
+}
+
+.button:hover,
+.button-with-text-and-icon:hover,
+.button-icon:hover {
+  @include button-hover-color;
+}
+
+.button-red:hover {
+  @include button-hover-color($hover-color: var(--red));
+}
+
+.button-green:hover {
+  @include button-hover-color($hover-color: var(--green));
+}
+
+.button-orange:hover {
+  @include button-hover-color($hover-color: var(--orange));
+}
+
+@mixin button-without-icon-hover($hover-color: var(--blue)) {
+  .svg-icon {
+    fill: $hover-color;
+  }
+}
+
+.button-icon-without-border:hover {
+  @include button-without-icon-hover;
+}
+
+.button-icon-without-border-red:hover {
+  @include button-without-icon-hover(var(--red));
+}
+
+.button-icon-without-border-green:hover {
+  @include button-without-icon-hover(var(--green));
+}
+
+.button-icon-without-border-orange:hover {
+  @include button-without-icon-hover(var(--orange));
+}
+
+.svg-icon {
+  fill: var(--light-button-font-color);
+  padding: 2px;
+}
+
+.svg-icon-20 {
+  width: 20px;
+  height: 20px;
+}
+
+.svg-icon-24 {
+  width: 24px;
+  height: 24px;
+}

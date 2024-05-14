@@ -1,0 +1,267 @@
+@keyframes rotate-skill {
+  from {
+    transform: translate(-150px) rotate(0deg);
+  }
+  to {
+    transform: translate(-150px) rotate(-360deg);
+  }
+}
+
+%skill {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  //z-index: -1;
+  animation: rotate-skill 60s infinite linear;
+}
+
+.angular {
+  @extend %skill;
+  top: calc(50% - 300px);
+  left: calc(50% - 100px);
+}
+
+.axios {
+  @extend %skill;
+  top: calc(50% - 100px);
+  left: calc(50% - 300px);
+}
+
+.babel {
+  @extend %skill;
+  top: calc(50% + 200px);
+  left: calc(50% - 100px);
+}
+
+.bootstrap {
+  width: 128px;
+  height: 102px;
+  position: absolute;
+  top: calc(50% + 100px);
+  left: calc(50% + 100px);
+  animation: rotate-skill 60s infinite linear;
+}
+
+.css {
+  @extend %skill;
+  top: calc(50% + 100px);
+  left: calc(50% - 100px);
+}
+
+.django {
+  @extend %skill;
+  top: calc(50% - 300px);
+  left: calc(50% - 300px);
+}
+
+.docker {
+  @extend %skill;
+  top: calc(50% + 20px);
+  left: calc(50% + 200px);
+}
+
+.electron {
+  @extend %skill;
+  top: calc(50%);
+  left: calc(50% - 200px);
+}
+
+.emmet {
+  @extend %skill;
+  top: calc(50% + 300px);
+  left: calc(50% + 100px);
+}
+
+.eslint {
+  @extend %skill;
+  top: calc(50% - 50px);
+  left: calc(50%);
+}
+
+.figma {
+  @extend %skill;
+  top: calc(50% - 0px);
+  left: calc(50% - 300px);
+}
+
+.gatsby {
+  @extend %skill;
+  top: calc(50% - 200px);
+  left: calc(50% + 200px);
+}
+
+.git {
+  @extend %skill;
+  top: calc(50% - 200px);
+  left: calc(50% + 300px);
+}
+
+.gitlab {
+  @extend %skill;
+  top: calc(50% - 400px);
+  left: calc(50% - 200px);
+}
+
+.gradle {
+  @extend %skill;
+  top: calc(50% - 400px);
+  left: calc(50% - 400px);
+}
+
+.html {
+  @extend %skill;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+
+.idea {
+  @extend %skill;
+  top: calc(50% - 400px);
+  left: calc(50% - 400px);
+}
+
+.java {
+  @extend %skill;
+  top: calc(50% + 300px);
+  left: calc(50% - 400px);
+}
+
+.javascript {
+  @extend %skill;
+  top: calc(50% + 250px);
+  left: calc(50% + 250px);
+}
+
+.liquibase {
+  @extend %skill;
+  top: calc(50% - 400px);
+  left: calc(50% + 200px);
+}
+
+.maven {
+  @extend %skill;
+  top: calc(50% - 400px);
+  left: calc(50% + 100px);
+}
+
+.mui {
+  @extend %skill;
+  top: calc(50% - 400px);
+  left: calc(50% + 300px);
+}
+
+.node {
+  @extend %skill;
+  top: calc(50% - 400px);
+  left: calc(50% + 400px);
+}
+
+.npm {
+  @extend %skill;
+  top: calc(50% + 300px);
+  left: calc(50% - 100px);
+}
+
+.postgresql {
+  @extend %skill;
+  top: calc(50% + 300px);
+  left: calc(50% - 200px);
+}
+
+.prettier {
+  @extend %skill;
+  top: calc(50% + 300px);
+  left: calc(50% - 300px);
+}
+
+.python {
+  @extend %skill;
+  top: calc(50% + 400px);
+  left: calc(50% - 400px);
+}
+
+.react {
+  @extend %skill;
+  top: calc(50% - 100px);
+  left: calc(50% + 400px);
+}
+
+.react-hook-form {
+  @extend %skill;
+  top: calc(50% - 200px);
+  left: calc(50% + 400px);
+}
+
+.react-router {
+  @extend %skill;
+  top: calc(50% - 300px);
+  left: calc(50% + 400px);
+}
+
+.redux {
+  @extend %skill;
+  top: calc(50% - 300px);
+  left: calc(50% - 400px);
+}
+
+.rxjs {
+  @extend %skill;
+  top: calc(50% - 100px);
+  left: calc(50% + 200px);
+}
+
+.sass {
+  @extend %skill;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+}
+
+.spring {
+  @extend %skill;
+  top: calc(50% - 100px);
+  left: calc(50% + 300px);
+}
+
+.sqlite {
+  @extend %skill;
+  top: calc(50% - 100px);
+  left: calc(50% + 400px);
+}
+
+.storybook {
+  @extend %skill;
+  top: calc(50% - 200px);
+  left: calc(50% + 400px);
+}
+
+.ts {
+  @extend %skill;
+  top: calc(50% - 200px);
+  left: calc(50% + 100px);
+}
+
+.tslint {
+  @extend %skill;
+  top: calc(50% - 150px);
+  left: calc(50%);
+}
+
+.webpack {
+  @extend %skill;
+  top: calc(50% + 100px);
+  left: calc(50%);
+}
+
+@keyframes rotate-skill-container {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation-container {
+  position: absolute;
+  animation: rotate-skill-container 60s infinite linear;
+}

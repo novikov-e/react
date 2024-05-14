@@ -1,0 +1,96 @@
+.atom {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  /*margin: auto;*/
+}
+
+.custom {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: #db4c4c;
+  position: relative;
+  top: 31px;
+  left: 31px;
+}
+
+.first-neutron {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #2478b7;
+  position: absolute;
+  top: 36px;
+  left: 20px;
+}
+
+.second-neutron {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #2478b7;
+  position: absolute;
+  top: 36px;
+  left: 52px;
+}
+
+.first-electron {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4b8333;
+  position: absolute;
+  top: 9px;
+  left: 36px;
+}
+
+.second-electron {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4b8333;
+  position: absolute;
+  top: 63px;
+  left: 36px;
+}
+
+.neutrons {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  animation: 3s linear infinite rotateClockWise;
+}
+
+.electrons {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  animation: 3s linear infinite rotateCounterClockWise;
+}
+
+@keyframes rotateClockWise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateCounterClockWise {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}

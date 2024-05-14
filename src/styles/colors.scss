@@ -1,0 +1,105 @@
+:root {
+  --white: #fafafa;
+  --black: #171616;
+  --gray: #5e5e5e;
+  --gray-hover: #8c8c8c;
+  --gray-disabled: #d0d0d0;
+  --red: #db4c4c;
+  --red-hover: #f16363;
+  --red-disabled: #ffb0b0;
+  --pink: #eb3472;
+  --pink-hover: #ff5b93;
+  --pink-disabled: #fc9ebb;
+  --yellow: #fbc017;
+  --yellow-hover: #ffce56;
+  --yellow-disabled: #ffe197;
+  --aqua: #2a9095;
+  --aqua-hover: #64cdd2;
+  --aqua-disabled: #b4fbff;
+  --green: #4b8333;
+  --green-hover: #79b95f;
+  --green-disabled: #c6ffb0;
+  --orange: #fd7336;
+  --orange-hover: #ff9568;
+  --orange-disabled: #ffc5ad;
+  --blue: #2478b7;
+  --blue-hover: #53a3e1;
+  --blue-disabled: #9ed6ff;
+  --purple: #a969a0;
+  --purple-hover: #d38eca;
+  --purple-disable: #fdc7f6;
+}
+
+body {
+  /*header*/
+  --header-background-color: #ffffff;
+
+  /*body*/
+
+  /*card*/
+  --body-background-color: #ffffff;
+  --body-text-color: #262626;
+  --body-text-color-hover: #707070;
+
+  --window-header-background-color: #dedede;
+  --window-header-text-color: #262626;
+  --window-body-background-color: #eeeeee;
+  --window-body-text-color: #262626;
+
+  --tab-background-color: transparent;
+  --tab-text-color: #262626;
+  --tab-background-color-hover: #9b9b9b;
+  --tab-text-color-hover: #262626;
+  --tab-background-color-active: #9b9b9b;
+  --tab-text-color-active: #262626;
+
+  --border: 1px solid #b0b0b0;
+  --button-border: 2px solid #262626;
+  --button-hover: #9b9b9b;
+
+  --input-focus: #d9d9d9;
+  --input-placeholder: #b0b0b0;
+
+  --date-time-picker-icon: 0;
+
+  --scrollbar-track-color: #dedede;
+  --scrollbar-button-color: #dedede;
+  --scrollbar-button-color-hover: #bdbdbd;
+}
+
+body[dark-mode='dark'] {
+  /*header*/
+  --header-background-color: #262626;
+
+  /*body*/
+
+  /*card*/
+  --body-background-color: #262626;
+  --body-text-color: #b7b7b7;
+  --body-text-color-hover: #707070;
+
+  --window-header-background-color: #262626;
+  --window-header-text-color: #b7b7b7;
+  --window-body-background-color: #424242;
+  --window-body-text-color: #a9a9a9;
+
+  --tab-background-color: transparent;
+  --tab-text-color: #b7b7b7;
+  --tab-background-color-hover: #9b9b9b;
+  --tab-text-color-hover: #262626;
+  --tab-background-color-active: #9b9b9b;
+  --tab-text-color-active: #262626;
+
+  --border: 1px solid #676767;
+  --button-border: 2px solid #b7b7b7;
+  --button-hover: #949494;
+
+  --input-focus: #575757;
+  --input-placeholder: #676767;
+
+  --date-time-picker-icon: 1;
+
+  --scrollbar-track-color: #5e5e5e;
+  --scrollbar-button-color: #3d3d3d;
+  --scrollbar-button-color-hover: #5e5e5e;
+}
